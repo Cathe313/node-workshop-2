@@ -1,37 +1,63 @@
-//This function takes a string and returns its first character.
 
-function firstChar(word) {
-    return(word[0]);
+
+function firstChar(word, callback) {
+    callback(word[0]);
 }
 
-function funWithWords(str, callback){
-    callback(str);
+//Testing
+
+firstChar("Hello", function(word){console.log(word)});
+
+
+
+function lastChar(word, callback) {
+    callback(word [ word.length - 1 ]);
 }
 
-//Testing:
+//Testing
 
-funWithWords("Hello", firstChar);
-
-
-//This function takes a string and returns its last character. 
-
-function lastChar(word) {
-    return(word [ word.length - 1 ]);
-}
-
-//Testing:
-
-funWithWords("Montreal", lastChar);
+lastChar("Hello", function(word){console.log(word)});
 
 //This function returns the first and last characters of a string:
 
-function getFirstAndLast(str, callback) {
-    var str1 = firstChar(str);
-    var str2 = lastChar(str);
-    var firstAndLast = str1.concat(str2);
-    callback(firstAndLast);
+function getFirstAndLast(word, callback) {
+    firstChar(word, function(firstLetter) {
+        lastChar(word, function(lastLetter){
+            callback(firstLetter + lastLetter);
+        });
+    } )
 }
 
 //Testing:
 
 getFirstAndLast("hello", function(newStr) { console.log(newStr); }); 
+
+
+
+function getFirstChar(str, cb) {
+    return str[0];
+}
+function getLastChar(str, cb) {
+    return str[str.length - 1];
+}
+function getFirstAndLast(str) {
+    var first = getFirstChar(str);
+    var last = getLastChar(str);
+    
+    return first + last;
+}
+var result = getFirstAndLast("hello");
+console.log(result);
+
+
+
+request('google', function(err, resp) {
+    prompt(['city'], function(err2, res2) {
+        console.log();
+    })
+})
+
+
+var resp = request('google');
+var res2 = prompt(['city']);
+console.log();
