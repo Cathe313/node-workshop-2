@@ -1,0 +1,23 @@
+{
+  "name": "node-workshop-2",
+  "version": "1.0.0",
+  "description": "\"Exercises for Node workshop 2015-09-16\"",
+  "main": "cps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cathe313/node-workshop-2.git"
+  },
+  "keywords": [
+    "node",
+    "cps"
+  ],
+  "author": "Catherine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cathe313/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/Cathe313/node-workshop-2"
+}
