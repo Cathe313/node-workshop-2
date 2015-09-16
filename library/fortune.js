@@ -1,6 +1,8 @@
 //Running this function should output a random quote from a list of 10 different quotes.
 
-function fortune() {
+module.exports = {
+
+getFortune: function fortune() {
     switch(Math.floor ( Math.random() * 10 )) {
         case 0:
             var quote = "You will visit the Dung Pits of Glive soon.";
@@ -36,8 +38,5 @@ function fortune() {
     console.log(quote);
 }
 
-
-var exports = module.exports = {
-    getFortune : fortune()
 }
 
