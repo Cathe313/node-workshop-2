@@ -27,17 +27,17 @@ function fortune() {
             var quote = "You own a dog, but you can only feed a cat.";
            break;
         case 8:
-            var quote = "You will be awarded the Nobel Peace Prize... posthumously.";
+            var quote = "You will be awarded the Nobel Peace Prize... posthumously!";
            break;
         case 9:
             var quote = "If you tell the truth you don't have to remember anything.";
             break;
     }
-    return quote;
+    console.log(quote);
 }
 
 
-module.export = {
-    getFortune : fortune
+var exports = module.exports = {
+    getFortune : fortune()
 }
 
