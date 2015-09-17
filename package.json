@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Cathe313/node-workshop-2/issues"
   },
-  "homepage": "https://github.com/Cathe313/node-workshop-2"
+  "homepage": "https://github.com/Cathe313/node-workshop-2",
+  "dependencies": {
+    "request": "^2.62.0"
+  }
 }
