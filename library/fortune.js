@@ -35,7 +35,7 @@ getFortune: function fortune() {
             var quote = "If you tell the truth you don't have to remember anything.";
             break;
     }
-    console.log(quote);
+    return(quote);
 }
 
 }
