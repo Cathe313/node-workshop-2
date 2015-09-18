@@ -1,8 +1,6 @@
 
 var http = require('http');
 
-const PORT=8080;
-
 function handleRequest(request, response){
     var start = new Date().getTime();
     while (new Date().getTime() - start < 10000);
